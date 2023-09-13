@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <Title>Modelos e Preços</Title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicial-scale=1"/>
+        <link rel="icon" type="image/png" href="imagens/modelicon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script language="javascript" type="text/javascript">
+			function validar() {
+				var nome = contato.nome.value;
+				var email = contato.email.value;
+				var cid = contato.cid.value;
+
+				if (nome == "" || nome.length < 3) {
+					alert("Preencha seu nome");
+					contato.nome.focus();
+					return false;
+				}
+				if (email == "") {
+					alert("Preencha seu email");
+					contato.email.focus();
+					return false;
+				}
+				if (cid == "Escolha") {
+					alert("Selecione sua cidade");
+					contato.cid.focus();
+					return false;
+				}
+			}
+		</script>
+	</head>
+    <body id="homemodelo">
+        <section class="sectionctt1">
+            <div id="header">
+                <ul id="nav">
+                    <img src="imagens/iconecd1.png" height="50" width="50">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="modelo.html">modelo</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </header>
+            <table id="ctt">
+                <tr>
+                    <td><font face="courier" size="3"><b>Nome:</b></td>
+                    <td><input type="text" name="nome"></td>
+                </tr>
+                <tr>
+                    <td><font face="courier" size="3"><b>Email:</b></td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td><font face="courier" size="3"><b>Cidade:</b></td>
+                    <td>
+                        <select name="cid">
+                            <option>Escolha</option>
+                            <option>Campinas</option>
+                            <option>Hortolandia</option>
+                            <option>Sumaré</option>
+                            <option>Paulínia</option>
+                            <option>São Paulo</option>
+                            <option>Indaiatuba</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><font face="courier" size="3"><b>Deixe aqui sua mensagem!:</b></td>
+                    <td><input type="textarea" name="" cols="10" rows="100" id="msg"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" onclick="return validar()" value="Enviar">
+                        <input type="reset" name="limpa" value="Limpar">
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </body>
+    <footer>
+        <p id="rodape">Breno Tanaka - &copy Todos Direitos Reservados<br>Trabalho Acadêmico Sem Fins Lucrativos</font>
+    </footer>
+</html>
