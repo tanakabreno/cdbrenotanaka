@@ -6,29 +6,6 @@
         <meta name="viewport" content="width=device-width, inicial-scale=1"/>
         <link rel="icon" type="image/png" href="imagens/contato.png">
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script language="javascript" type="text/javascript">
-			function validar() {
-				var nome = contato.nome.value;
-				var email = contato.email.value;
-				var cid = contato.cid.value;
-
-				if (nome == "" || nome.length < 3) {
-					alert("Preencha seu nome");
-					contato.nome.focus();
-					return false;
-				}
-				if (email == "") {
-					alert("Preencha seu email");
-					contato.email.focus();
-					return false;
-				}
-				if (cid == "Escolha") {
-					alert("Selecione sua cidade");
-					contato.cid.focus();
-					return false;
-				}
-			}
-		</script>
 	</head>
     <body id="homemodelo">
         <section class="sectionctt1">
