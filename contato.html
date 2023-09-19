@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <Title>Modelos e Preços</Title>
+        <Title>Contato</Title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, inicial-scale=1"/>
-        <link rel="icon" type="image/png" href="imagens/modelicon.png">
+        <link rel="icon" type="image/png" href="imagens/contato.png">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script language="javascript" type="text/javascript">
 			function validar() {
@@ -42,38 +42,40 @@
                 </ul>
             </header>
             <table id="ctt">
-                <tr>
-                    <td><font face="courier" size="3"><b>Nome:</b></td>
-                    <td><input type="text" name="nome"></td>
-                </tr>
-                <tr>
-                    <td><font face="courier" size="3"><b>Email:</b></td>
-                    <td><input type="text" name="email"></td>
-                </tr>
-                <tr>
-                    <td><font face="courier" size="3"><b>Cidade:</b></td>
-                    <td>
-                        <select name="cid">
-                            <option>Escolha</option>
-                            <option>Campinas</option>
-                            <option>Hortolandia</option>
-                            <option>Sumaré</option>
-                            <option>Paulínia</option>
-                            <option>São Paulo</option>
-                            <option>Indaiatuba</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td><font face="courier" size="3"><b>Deixe aqui sua mensagem!:</b></td>
-                    <td><input type="textarea" name="" cols="10" rows="100" id="msg"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" onclick="return validar()" value="Enviar">
-                        <input type="reset" name="limpa" value="Limpar">
-                    </td>
-                </tr>
+                <form name="tabelactt" method="GET">
+                    <tr>
+                        <td><font face="courier" size="3"><b>Nome:</b></td>
+                        <td><input type="text" name="nome"></td>
+                    </tr>
+                    <tr>
+                        <td><font face="courier" size="3"><b>Email:</b></td>
+                        <td><input type="text" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td><font face="courier" size="3"><b>Cidade:</b></td>
+                        <td>
+                            <select name="cid">
+                                <option>Escolha</option>
+                                <option>Campinas</option>
+                                <option>Hortolandia</option>
+                                <option>Sumaré</option>
+                                <option>Paulínia</option>
+                                <option>São Paulo</option>
+                                <option>Indaiatuba</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><font face="courier" size="3"><b>Deixe aqui sua mensagem!:</b></td>
+                        <td><input type="textarea" name="" cols="10" rows="100" id="msg"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" onclick="return validar()" value="Enviar">
+                            <input type="reset" name="limpa" value="Limpar">
+                        </td>
+                    </tr>
+            </form>
             </table>
         </section>
     </body>
