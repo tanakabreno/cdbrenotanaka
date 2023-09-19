@@ -254,7 +254,7 @@ footer{
 }
 
 @media screen and (max-width: 1024px){
-    *{
-        background-color: blue;
+    body{
+        background-size: contain;
     }
 }
