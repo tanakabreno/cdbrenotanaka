@@ -226,22 +226,6 @@ footer{
     margin-top: 0%;
 }
 
-#cd {
-    width: 200px; /* Defina o tamanho da imagem conforme necessário */
-    height: 200px; /* Defina o tamanho da imagem conforme necessário */
-    margin: 50px auto; /* Centralizar a imagem na tela */
-    animation: girar 8s linear infinite; /* Aplicar a animação 'girar' */
-}
-
-@keyframes girar {
-    from {
-        transform: rotate(0deg); /* Rotação inicial de 0 graus */
-    }
-    to {
-        transform: rotate(360deg); /* Rotação final de 360 graus (uma volta completa) */
-    }
-}
-
 ::-webkit-scrollbar-track {
     background-color: inherit;
 }
