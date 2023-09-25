@@ -255,9 +255,12 @@ footer{
 
 @media screen and (max-width: 360px) {
     #nav {
-        text-align: le;
+        text-align: left;
     }
 
+    #imgsec2sobre{
+        display: none;
+    }
     #nav li {
         display: block;
         float: none;
