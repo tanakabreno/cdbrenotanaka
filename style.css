@@ -226,6 +226,22 @@ footer{
     margin-top: 0%;
 }
 
+#cd {
+    width: 200px; /* Defina o tamanho da imagem conforme necessário */
+    height: 200px; /* Defina o tamanho da imagem conforme necessário */
+    margin: 50px auto; /* Centralizar a imagem na tela */
+    animation: girar 8s linear infinite; /* Aplicar a animação 'girar' */
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg); /* Rotação inicial de 0 graus */
+    }
+    to {
+        transform: rotate(360deg); /* Rotação final de 360 graus (uma volta completa) */
+    }
+}
+
 ::-webkit-scrollbar-track {
     background-color: inherit;
 }
@@ -237,8 +253,25 @@ footer{
     background: blanchedalmond;
 }
 
-@media screen and (max-width: 1024px){
-    body{
-        background-size: contain;
+@media screen and (max-width: 360px) {
+    #nav {
+        text-align: le;
+    }
+
+    #nav li {
+        display: block;
+        float: none;
+    }
+
+    #nav li a {
+        padding: 10px;
+    }
+
+    #histcd, #textsobre {
+        font-size: 14px;
+    }
+
+    .section1sobre, .section2sobre {
+        padding: 10px;
     }
 }
